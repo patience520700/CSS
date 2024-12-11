@@ -32,13 +32,12 @@ body {
   flex-direction: column;
 }
 
-header,
+header, 
 footer {
   position: sticky;
   background-color: #1e293b;
   color: whitesmoke;
   text-align: center;
-  z-index: 1;
 }
 
 header {
@@ -93,6 +92,10 @@ footer {
 }
 
 .card:target {
+    border: 2px solid rebeccapurple;
+}
+
+.card:target {
   border: 2px solid rebeccapurple;
 }
 
@@ -126,8 +129,12 @@ footer {
   display: block;
 }
 
-.card figcaption::first-letter {
+/* .card figcaption::before {
   font-size: 3rem;
+} */
+
+.card figcaption::first-letter {
+ font-size: 3rem;
 }
 
 .card p {
